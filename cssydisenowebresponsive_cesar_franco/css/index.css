@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+body {
+    font-family: 'Dancing Script', cursive;
+    background-color: #02010a;
+}
+
+.contenedor {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.contenedor div {
+    box-sizing: border-box;
+    min-width: 150px;
+    padding: 20px;
+}
+
+/*Cabecera*/
+
+.cabecera {
+    background-color: #5b7989;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.titulo h1 {
+    color: #fff;
+    text-shadow: 2px 2px 4px #02010a;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.menu{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    float: right;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration:underline;
+    text-decoration-color: white;
+}
+
+/*central*/
+
+.central {
+    color: black;
+    background-color: #9BC1BC;
+}
+
+/*secundaria*/
+
+.secundaria {
+    background-color: #F4F1BB;
+    border: 1px solid #F4F1BB;
+}
+
+/*footer*/
+
+.piepagina {
+    color: black;
+    background-color: #C6d5c5;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.piepagina .contacto ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+	.social ul {
+        list-style: none;
+        /* padding: 0; */
+	}
+ 
+	.social ul li a {
+		display: inline-block;
+		color:#fff;
+		background: #000;
+		padding: 10px 15px;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; 
+	}
+ 
+	.social ul li .icon-facebook {background:#3b5998;} 
+	.social ul li .icon-twitter {background: #00abf0;}
+	.social ul li .icon-google-plus {background: #d95232;}
+ 
+	.social ul li a:hover {
+		background: #000; 
+		padding: 10px 30px;
+	}
+
+/*general*/
+
+.contenedor {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+.cabecera,
+.central,
+.secundaria,
+.piepagina {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    box-shadow: 2px 2px #02010a;
+}
+
+/*efectos*/
+#col-3 {
+    transition: all 1s ease-in-out;  
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+}
+
+#col-3:hover {
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    
+}
+
+#col-3 img:hover{
+    box-shadow: 2px 2px #82c3a6 ;
+    border-right: 2px solid #82c3a6;
+}
+
+#col-4 {
+    transition: all 1s ease-in-out;  
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+}
+
+#col-4:hover {
+    transform: translate(20px, -5px);
+    -ms-transform: translate(20px, -5px); /* IE 9 */
+    -webkit-transform: translate(20px, -5px); /* Safari y Chrome */
+    -moz-transform: translate(20px, -5px); /* Firefox */
+}
+
+#col-4 img:hover{
+    box-shadow: 2px 2px #82c3a6 ;
+    border-right: 2px solid #82c3a6;
+}
+
+
+
+
+
+@media (min-width: 900px) {
+    .cabecera,
+    .secundaria,
+    .central,
+    .piepagina {
+        width: 100%;
+    }
+
+    .titulo,
+    .menu {
+        width: 50%;
+        float: left;
+    }
+    .contenedor {
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .paisajes,
+    .retratos {
+        width: 50%;
+        float: left;
+    }
+
+    .contacto, .terminos, .redes, .derechos {
+        width: 25%;
+        float: left;  
+    }
+}
+
+@media all and (max-width: 400px) {
+    .titulo,
+    .menu {
+        width: 100%;
+        float: left;
+    }
+
+    .paisajes,
+    .retratos {
+        width: 100%;
+        float: left;
+    }
+    .contacto, .terminos, .redes, .derechos {
+        width: 100%;
+        float: left;  
+    }
+}

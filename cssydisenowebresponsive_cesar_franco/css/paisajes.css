@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+body {
+    font-family: 'Dancing Script', cursive;
+    background-color: #02010a;
+}
+
+.contenedor {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.contenedor div {
+    box-sizing: border-box;
+    min-width: 150px;
+    padding: 10px;
+}
+
+/*Cabecera*/
+/* #region */
+
+.cabecera {
+    background-color: #5b7989;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.titulo h1 {
+    color: #fff;
+    text-shadow: 2px 2px 4px #02010a;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.menu{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    float: right;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    /* text-decoration: none; */
+    text-decoration:underline;
+    text-decoration-color: white;
+}
+
+/* #endregion */
+
+/*secundaria*/
+/* #region */
+.secundaria {
+    background-color: #F4F1BB;
+    border: 1px solid #F4F1BB;
+}
+
+.paisaje {
+    float: left;
+    width: 33.3%;
+}
+
+/* #endregion */
+
+/*footer*/
+/* #region */
+
+.piepagina {
+    color: black;
+    background-color: #C6d5c5;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.piepagina .contacto ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social ul {
+    list-style: none;
+    /* padding: 0; */
+}
+
+.social ul li a {
+    display: inline-block;
+    color:#fff;
+    background: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    -webkit-transition:all 500ms ease;
+    -o-transition:all 500ms ease;
+    transition:all 500ms ease; 
+}
+
+.social ul li .icon-facebook {background:#3b5998;} 
+.social ul li .icon-twitter {background: #00abf0;}
+.social ul li .icon-google-plus {background: #d95232;}
+
+.social ul li a:hover {
+    background: #000; 
+    padding: 10px 30px;
+}
+
+/* #endregion */
+
+/*general*/
+/* #region */
+
+.contenedor {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+.cabecera,
+.secundaria,
+.piepagina {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    box-shadow: 2px 2px #02010a;
+}
+
+/* #endregion */
+
+/*efectos*/
+
+.paisaje_1 img {
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+    /* -webkit-filter: grayscale(10); Safari 6.0 - 9.0 */
+    /* filter: grayscale(10px); */
+}
+
+.paisaje_2 img, .paisaje_4 img, .paisaje_6 img {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.paisaje_3 img {
+    -webkit-filter: sepia(90%);
+    -moz-filter: sepia(90%);
+    -o-filter: sepia(90%);
+    -ms-filter: sepia(90%);
+    filter: sepia(90%);
+}
+
+
+@media (min-width: 900px) {
+    .cabecera,
+    .secundaria,   
+    .piepagina {
+        width: 100%;
+    }
+
+    .titulo,
+    .menu {
+        width: 50%;
+        float: left;
+    }
+    .contenedor {
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }   
+
+    .contacto, .terminos, .redes, .derechos {
+        width: 25%;
+        float: left;  
+    }
+
+    div[class^='paisaje'] {
+        float: left;
+        width: 33.3%;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .titulo,
+    .menu {
+        width: 100%;
+        float: left;
+    }   
+    .contacto, .terminos, .redes, .derechos {
+        width: 100%;
+        float: left;  
+    }
+
+    div[class^='paisaje'] {
+        float: left;
+        width: 100%;
+    }
+}
