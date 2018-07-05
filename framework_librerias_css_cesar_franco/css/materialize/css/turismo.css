@@ -1,0 +1,85 @@
+.barra-superior{
+    min-height: 4rem;
+  }
+
+  .barra-superior .row{
+    margin-bottom: 0;
+  }
+
+  .logo{
+    width: 160px;
+    margin: 0.5rem 0px;
+    float: left;
+  }
+
+  .contenedor-botones{
+    margin-top: 0.5rem;
+  }
+
+  .fondo{
+    background: url('../../../img/montain.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;    
+    min-height: 900px;
+  }
+
+  .margin-row{
+    margin: 0px;
+  }
+
+ .redes ul li {
+    margin-top: 5px;
+  }
+
+  #fondo1{
+    background: url('../../../img/turismo1.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    min-height: 250px;
+    margin-top: 10px;
+  }
+  #fondo2{
+    background: url('../../../img/img4.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    min-height: 250px;
+    margin-top: 10px;
+  }
+
+  #fondo3{
+    background: url('../../../img/img2.jpg');
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+    background-size: 100%;
+    min-height: 600px;
+    margin-top: 10px;
+  }
+
+  #fondo4{
+    background: url('../../../img/img1.jpg');
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+    background-size: 100%;
+    min-height: 250px;
+    margin-top: 10px;
+  }
+
+  #fondo5{
+    background: url('../../../img/img5.jpg');
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+    background-size: 100%;
+    min-height: 250px;
+    margin-top: 10px;
+  }
+
+  .perfil {
+    width: 70px;
+    height: 70px; 
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }

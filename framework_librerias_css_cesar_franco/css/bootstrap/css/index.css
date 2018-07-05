@@ -1,0 +1,177 @@
+body {
+    padding-top: 0;
+    font-size: 12px;
+    color: #777 !important;
+    background: #dee2e6d1;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* .container div {
+    box-sizing: border-box;
+    min-width: 150px;
+} */
+
+.sec-head {
+    background-color: #fff;
+}
+
+.logo {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+}
+
+.social ul {
+    position: relative;
+    list-style: none;
+    /* padding: 0; */
+}
+
+.social ul li a {
+    display: inline-block;
+    color: #fff;
+    background: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.social ul li .icon-facebook {
+    background: #3b5998;
+}
+
+.social ul li .icon-twitter {
+    background: #00abf0;
+}
+
+.social ul li .icon-google-plus {
+    background: #d95232;
+}
+
+.social ul li a:hover {
+    background: #000;
+    padding: 10px 30px;
+}
+
+.sub-social {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.fondo {
+    background-color: rgba(0, 135, 208, 0.27) !important;
+}
+
+#nav {
+    margin: 15px 0px;
+}
+#nav a {
+    flex: 1 1 auto;
+    text-align: center;
+    border-radius: .25rem;
+    margin: 0px 5px;
+}
+
+
+.contenido {
+    background-color: #fff;
+    padding: 10px ;
+    margin-top: 5px;
+}
+
+.buscador {
+    background: #f8f9fa;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.form-group.has-search {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+img.izq{
+    float: left;
+}
+
+img.right{
+    float: right;
+}
+
+/* Chat containers */
+
+/* .container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+} */
+
+/* Darker chat container */
+
+/* .darker {
+    border-color: #ccc;
+    background-color: #ddd;
+} */
+
+/* Clear floats */
+
+/* .container::after {
+    content: "";
+    clear: both;
+    display: table;
+} */
+
+/* Style images */
+
+/* .container img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+} */
+
+/* Style the right image */
+
+/* .container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right: 0;
+} */
+
+/* Style time text */
+
+/* .time-right {
+    float: right;
+    color: #aaa;
+} */
+
+/* Style time text */
+
+/* .time-left {
+    float: left;
+    color: #999;
+} */
