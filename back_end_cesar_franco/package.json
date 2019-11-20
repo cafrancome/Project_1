@@ -1,0 +1,16 @@
+{
+  "name": "back_end_cesar_franco",
+  "version": "1.0.0",
+  "description": "ejercicio de socket y lectura de datos json ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cesar Franco",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "socket.io": "^1.4.5"
+  }
+}
