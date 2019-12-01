@@ -4,13 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
   <title>Buscador</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-  <script nomodule src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-  <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-  <link rel="stylesheet" href="ion.rangeSlider.css">
-  <link rel="stylesheet" href="ion.rangeSlider.skinFlat.css">
-  <script nomodule src="ion.rangeSlider.min.js"></script>
-  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="css/materialize.min.css">  
+  <link rel="stylesheet" href="css/ion.rangeSlider.css">
+  <link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css">
+  
+  <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/socket.io-1.4.5.js"></script>  
+  <script src="js/ion.rangeSlider.min.js"></script>
+  <link rel="stylesheet" href="css/app.css">
+
 </head>
 <body>
   <div class="navbar-fixed">
@@ -57,41 +60,40 @@
           </div>
         </div>
       </div>
-      <div class="col m8 lista">
-        <!-- Property
-        <div class="card horizontal">
+      <div class="col m8 lista" id="inmuebles">
+        <!-- Property -->
+        <div class="card horizontal" name="clasificado">
           <div class="card-image">
-            <img src="images/home.jpg">
+            <img src="img/home.jpg">
           </div>
           <div class="card-stacked">
             <div class="card-content">
               <div>
-                <b>Direccion: </b><p></p>
+                <b>Direccion: </b><p>:Direccion:</p>
               </div>
               <div>
-                <b>Ciudad: </b><p></p>
+                <b>Ciudad: </b><p>:Ciudad:</p>
               </div>
               <div>
-                <b>Telefono: </b><p></p>
+                <b>Telefono: </b><p>:Telefono:</p>
               </div>
               <div>
-                <b>Código postal: </b><p></p>
+                <b>Código postal: </b><p>:Codigo_Postal:</p>
               </div>
               <div>
-                <b>Precio: </b><p></p>
+                <b>Precio: </b><p>:Precio:</p>
               </div>
               <div>
-                <b>Tipo: </b><p></p>
+                <b>Tipo: </b><p>:Tipo:</p>
               </div>
             </div>
             <div class="card-action right-align">
               <a href="#">Ver más</a>
             </div>
           </div>
-        </div>
-        -->
+        </div>       
       </div>
     </div>
-  <script type="module" src="app.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
